@@ -42,7 +42,7 @@ public class RootConfig {
 
         LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactoryBean.setDataSource(dataSource());
-        entityManagerFactoryBean.setPackagesToScan("com.mshykoriak.entity");
+        entityManagerFactoryBean.setPackagesToScan("com.mshykoriak.model");
         entityManagerFactoryBean.setJpaVendorAdapter(hibernateJpaVendorAdapter);
 
         return entityManagerFactoryBean;

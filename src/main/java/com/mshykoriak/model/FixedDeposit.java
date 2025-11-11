@@ -1,4 +1,4 @@
-package com.mshykoriak.entity;
+package com.mshykoriak.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.PrimaryKeyJoinColumn;
@@ -16,21 +16,38 @@ import java.util.Date;
 @PrimaryKeyJoinColumn(name = "fixed_acc_id")
 public class FixedDeposit extends Account{
 
+    private Date lockedFrom;
     private Date lockedUntil;
     private float interestRate;
+    private InterestType interestType;
 
     private FixedDeposit(Builder builder) {
         super(builder);
         this.lockedUntil = builder.lockedUntil;
         this.interestRate = builder.interestRate;
+        this.lockedFrom = builder.lockedFrom;
+        this.interestType = builder.interestType;
     }
 
     protected FixedDeposit() {}
 
+
+
     public static class Builder extends Account.Builder<Builder> {
 
+        private Date lockedFrom;
         private Date lockedUntil;
         private float interestRate;
+        private InterestType interestType;
+
+        public Builder interestType(InterestType interestType) {
+            this.interestType = interestType;
+            return this;
+        }
+        public Builder lockedFrom(Date lockedFrom) {
+            this.lockedFrom = lockedFrom;
+            return this;
+        }
 
         public Builder lockedUntil(Date lockedUntil) {
             this.lockedUntil = lockedUntil;

@@ -1,7 +1,7 @@
 package com.mshykoriak.services.impl;
 
-import com.mshykoriak.dto.UserInfo;
-import com.mshykoriak.entity.User;
+import com.mshykoriak.model.dto.UserInfo;
+import com.mshykoriak.model.User;
 import com.mshykoriak.repository.UserRepository;
 import com.mshykoriak.services.UserMapper;
 import com.mshykoriak.services.UserRegistrationService;

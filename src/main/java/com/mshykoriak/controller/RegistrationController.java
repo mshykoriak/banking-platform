@@ -1,8 +1,6 @@
 package com.mshykoriak.controller;
 
-import com.mshykoriak.dto.UserInfo;
-import com.mshykoriak.entity.AccountStatus;
-import com.mshykoriak.entity.CheckingAccount;
+import com.mshykoriak.model.dto.UserInfo;
 import com.mshykoriak.services.UserRegistrationService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

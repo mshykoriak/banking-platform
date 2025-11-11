@@ -1,6 +1,6 @@
 package com.mshykoriak.repository;
 
-import com.mshykoriak.entity.User;
+import com.mshykoriak.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

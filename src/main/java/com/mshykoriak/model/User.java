@@ -1,4 +1,4 @@
-package com.mshykoriak.entity;
+package com.mshykoriak.model;
 
 import jakarta.persistence.*;
 

@@ -1,4 +1,4 @@
-package com.mshykoriak.dto;
+package com.mshykoriak.model.dto;
 
 import jakarta.validation.constraints.NotBlank;
 
